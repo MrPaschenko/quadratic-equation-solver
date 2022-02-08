@@ -73,14 +73,22 @@ if (currentState == "Interactive") {
     let path = readLine()!
     let linkToFile = home.appendingPathComponent(path)
     
-    let fileContent = try! String(contentsOf: linkToFile)
-    let array = fileContent.map { String($0) }
+    let fileManager = FileManager.default
+    let fileExists = fileManager.fileExists(atPath: linkToFile.path)
     
-    let a = Double(array[0])!
-    let b = Double(array[2])!
-    let c = Double(array[4])!
+    if fileExists {
+        let fileContent = try! String(contentsOf: linkToFile)
+        let array = fileContent.map { String($0) }
+
+        let a = Double(array[0])!
+        let b = Double(array[2])!
+        let c = Double(array[4])!
+
+        solveQuadraticEquation(a: a, b: b, c: c)
+    } else {
+        print("File doesn't exit")
+    }
     
-    solveQuadraticEquation(a: a, b: b, c: c)
 } else {
     print("Error (currentState variable is incorrect)")
 }
