@@ -12,37 +12,19 @@ var currentState = "Interactive"
 print("Welcome to Quadratic Equation Solver!")
 
 if (currentState == "Interactive") {
-    print("ax^2 + bx + c = 0")
-    print("Please, enter real numbers")
-
+    print("Please, choose numbers")
+    print("(ax^2 + bx + c = 0)")
+    
     print("a = ", terminator: "")
-    let a = Double(readLine()!) ?? 0
+    let a = Int(readLine()!) ?? 0
 
-    if a != 0 {
-        print("b = ", terminator: "")
-        let b = Int(readLine()!) ?? 0
-        
-        print("c = ", terminator: "")
-        let c = Int(readLine()!) ?? 0
-        
-        print("Equation is: \(a) x^2 + \(b) x + \(c) = 0")
-        
-    } else {
-        print("Error, a != 0")
-    }
+    print("b = ", terminator: "")
+    let b = Int(readLine()!) ?? 0
+    
+    print("c = ", terminator: "")
+    let c = Int(readLine()!) ?? 0
 } else if (currentState == "Noninteractive") {
     
 } else {
     print("Error (currentState variable is incorrect)")
 }
-
-//func solveQuadraticEquation(a: Double, b: Double, c: Double) -> [Double] {
-//    let d = b * b - 4 * a * c
-//    if d > 0 {
-//        let x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a)
-//    } else if d < 0 {
-//        
-//    } else if d == 0 {
-//        
-//    }
-//}
