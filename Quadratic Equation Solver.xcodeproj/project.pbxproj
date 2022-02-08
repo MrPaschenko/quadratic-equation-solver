@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		A2F469A127B2993400D2C132 /* Quadratic Equation Solver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Quadratic Equation Solver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F469A427B2993400D2C132 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A2F469AB27B2DC8C00D2C132 /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		A2F469A327B2993400D2C132 /* Quadratic Equation Solver */ = {
 			isa = PBXGroup;
 			children = (
+				A2F469AB27B2DC8C00D2C132 /* file.txt */,
 				A2F469A427B2993400D2C132 /* main.swift */,
 			);
 			path = "Quadratic Equation Solver";
