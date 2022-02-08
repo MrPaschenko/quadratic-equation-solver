@@ -1,8 +1,29 @@
 # Quadratic Equation Solver
 
-[This is **lab 1** for Software Development Methodologies and Technologies.](https://docs.google.com/document/d/1pTz_GAy3GX0GxxoRV5DAiCIGJyMOONHuT9WQS8JgrB0/edit#)
+[This is **lab 1** for Software Development Methodologies and Technologies](https://docs.google.com/document/d/1pTz_GAy3GX0GxxoRV5DAiCIGJyMOONHuT9WQS8JgrB0/edit#)
 
-This tiny CLI program written in Swift lets you solve quadratic equations.
+This tiny CLI program written in Swift lets you solve quadratic equations
+
+## Installation
+
+1. Be sure that you have installed Git to clone the repository and Swift to run script
+
+2. Clone the repository to you local machine
+```bash
+git clone https://github.com/MrPaschenko/quadratic-equation-solver
+```
+
+3. Open directory
+```bash
+cd quadratic-equation-solver/Quadratic\ Equation\ Solver
+```
+
+4. Run script
+```bash
+swift main.swift
+```
+
+## Usage
 
 There are two modes supported:
 1. Interactive
@@ -10,7 +31,8 @@ There are two modes supported:
 
 To change mode, comment/uncomment 55/56 lines.
 
-## Interactive
+### Interactive
+
 Just enter real numbers for a, b, c variables and script will solve the problem!
 
 ```
@@ -27,7 +49,8 @@ x1 = 1.0
 x2 = -1.5
 ```
 
-## Noninteractive
+### Noninteractive
+
 Enter path to file to solve the problem.
 
 ```
@@ -51,3 +74,6 @@ or
 1\s0\s0\n
 ```
 
+___
+
+> [Revert commit](https://github.com/MrPaschenko/quadratic-equation-solver/commit/da19e8a2bc9a8a4be923da24706c6f96d16a1509)
