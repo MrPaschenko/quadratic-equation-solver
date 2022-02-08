@@ -9,8 +9,11 @@ import Foundation
 
 func solveQuadraticEquation(a: Double, b: Double, c: Double) {
     var answer: [Double] = []
+    print("Equation is: (\(a)) x^2 + (\(b)) x + (\(c)) = 0")
+    
     let d = b * b - 4 * a * c
     print("Discriminant is \(d)")
+    
     if d > 0 {
         let x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a)
         let x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a)
@@ -21,8 +24,6 @@ func solveQuadraticEquation(a: Double, b: Double, c: Double) {
         answer.append(x)
     }
     
-    print("Equation is: (\(a)) x^2 + (\(b)) x + (\(c)) = 0")
-
     if answer.count == 2 {
         print("There are 2 roots")
         print("x1 = \(answer[0])")
@@ -33,7 +34,7 @@ func solveQuadraticEquation(a: Double, b: Double, c: Double) {
     } else {
         print("There are no roots")
     }
-
+    
 }
 
 func getInput(variable: String) -> Double {
@@ -74,11 +75,11 @@ if (currentState == "Interactive") {
     
     let fileContent = try! String(contentsOf: linkToFile)
     let array = fileContent.map { String($0) }
-
+    
     let a = Double(array[0])!
     let b = Double(array[2])!
     let c = Double(array[4])!
-
+    
     solveQuadraticEquation(a: a, b: b, c: c)
 } else {
     print("Error (currentState variable is incorrect)")
