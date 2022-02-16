@@ -29,14 +29,18 @@ There are two modes supported:
 1. Interactive
 2. Noninteractive
 
-To change mode, comment/uncomment 55/56 lines.
+```
+Welcome to Quadratic Equation Solver!
+Choose mode:
+Interactive (1) or Noninteractive (2)
+```
 
 ### Interactive
 
 Just enter real numbers for a, b, c variables and script will solve the problem!
 
 ```
-Welcome to Quadratic Equation Solver!
+You chose Interactive mode
 ax^2 + bx + c = 0
 Please, enter real numbers
 > a = 2
@@ -54,7 +58,7 @@ x2 = -1.5
 Enter path to file to solve the problem.
 
 ```
-Welcome to Quadratic Equation Solver!
+You chose Noninteractive mode
 Please, enter path to file
 > Documents/file.txt
 Equation is: (1.0) x^2 + (0.0) x + (0.0) = 0
