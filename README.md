@@ -35,11 +35,12 @@ Choose mode:
 Interactive (1) or Noninteractive (2)
 ```
 
-### Interactive
+### 1. Interactive
 
 Just enter real numbers for a, b, c variables and script will solve the problem!
 
 ```
+>1
 You chose Interactive mode
 ax^2 + bx + c = 0
 Please, enter real numbers
@@ -53,11 +54,12 @@ x1 = 1.0
 x2 = -1.5
 ```
 
-### Noninteractive
+### 2. Noninteractive
 
 Enter path to file to solve the problem.
 
 ```
+>2
 You chose Noninteractive mode
 Please, enter path to file
 > Documents/file.txt
