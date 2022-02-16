@@ -52,10 +52,26 @@ func getInput(variable: String) -> Double {
     } while more
 }
 
-//var currentState = "Interactive"
-var currentState = "Noninteractive"
-
 print("Welcome to Quadratic Equation Solver!")
+
+var currentState = "Interactive"
+
+print("Choose mode:")
+print("Interactive (1) or Noninteractive (2)")
+
+let userChoice = Int(readLine()!)
+
+switch userChoice {
+case 1:
+    currentState = "Interactive"
+    print("You chose Interactive mode")
+case 2:
+    currentState = "Noninteractive"
+    print("You chose Noninteractive mode")
+default:
+    print("You chose incorrect mode")
+    print("Interactive mode is turned on as default")
+}
 
 if (currentState == "Interactive") {
     print("ax^2 + bx + c = 0")
