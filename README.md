@@ -56,7 +56,7 @@ x2 = -1.5
 
 ### 2. Noninteractive
 
-Enter path to file to solve the problem.
+Enter path to file to solve the problem
 
 ```
 >2
