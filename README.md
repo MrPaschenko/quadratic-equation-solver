@@ -1,6 +1,6 @@
 # Quadratic Equation Solver
 
-[This is **lab 1** for Software Development Methodologies and Technologies](https://docs.google.com/document/d/1pTz_GAy3GX0GxxoRV5DAiCIGJyMOONHuT9WQS8JgrB0/edit#)
+[This is **lab 1** for Software Development Methodologies and Technologies](https://docs.google.com/document/d/1pTz_GAy3GX0GxxoRV5DAiCIGJyMOONHuT9WQS8JgrB0)
 
 This tiny CLI program written in Swift lets you solve quadratic equations
 
